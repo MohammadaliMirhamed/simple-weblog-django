@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>{{ artc.title }}</title>
+
+  <link href="/static/home/css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+  <div class="blog-post-header">
+    <div class="w-container">
+      <div class="post-info-wrapper"><a class="post-info when-link" href="/">←&nbsp;view all posts</a></div>
+      <h1 class="blog-page-title">{{ artc.title }}</h1>
+      <div class="post-info-wrapper">
+        <div class="post-info">{{ artc.published_date }}</div>
+        <div class="post-info">|</div><a class="post-info when-link" href="">{{ artc.author }}</a></div>
+    </div>
+  </div>
+  <div class="content-wrapper">
+    <div class="w-container">
+      <div class="blog-body-wrapper">
+        <div class="body-copy w-richtext">
+          <p>
+              {{ artc.text }}
+          </p>
+        </div>
+      </div>
+      <div class="button-wrapper"><a class="button w-button" href="/">←&nbsp;View all posts</a></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="w-container">
+      <div class="navigation-bar">
+          {% for mnu in mnus %}
+          <a class="nav-link w--current" href="{{ mnu.link }}">
+              {{ mnu.title }}
+          </a>
+          {% endfor %}
+          <a class="float-right nav-link" href="">↑&nbsp;Go to top</a></div>
+    </div>
+  </footer>
+  <script src="./Wherever far wow thus a squirrel _ Blog_files/jquery.min.js.download" type="text/javascript"></script>
+  <script src="./Wherever far wow thus a squirrel _ Blog_files/webflow.adc0efbf5.js.download" type="text/javascript"></script>
+
+
+  <div id="selection_bubble" style="position:absolute;	visibility:hidden; padding:15px; color:#333; background:#eee; border-radius:10px; width:300px; z-index:10000"></div>
+</body>
+
+</html>
